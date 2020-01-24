@@ -144,6 +144,20 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
+  animation-name: change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
 }
 h1 {
   font-size: 5rem;
@@ -181,12 +195,19 @@ button:hover {
     color: white;
   }
 }
+.big-container {
+  margin-top: 6.5%;
+}
 .navbar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color: #F1F1F1;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navbar nav {
   width: 100%;
