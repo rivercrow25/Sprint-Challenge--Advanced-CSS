@@ -44,5 +44,12 @@ button{
   border-radius: 5px;
   padding: 3% 6%;
   .custom-button(@btn-bg-color, white);
+
+  @media @phone{
+    padding: 3% 40%;
+    margin-left: 2%;
+    background-color: @btn-bg-color;
+    color: white;
+  }
 }
 
