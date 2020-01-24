@@ -15,6 +15,19 @@ html, body {
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
+  animation-name: change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change{
+  0% {color: black;}
+  50% {color: white;}
+  100% {color: black;}
+}
+
+h1{
+  font-size: 5rem;
 }
 
 h2 {
@@ -36,3 +49,19 @@ p {
   margin: 0 auto;  
 }
 
+button{
+  border-radius: 5px;
+  padding: 3% 6%;
+  .custom-button(@btn-bg-color, white);
+
+  @media @phone{
+    padding: 3% 40%;
+    margin-left: 2%;
+    background-color: @btn-bg-color;
+    color: white;
+  }
+}
+
+.big-container{
+  margin-top: 6.5%;
+}
